@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 5%;
+    font-family: 'Poppins', sans-serif;
+}
+.main-part{
+    display: flex;
+}
+#mac-img{
+    width: 90%;
+}
+.calculation{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    margin-top: 50px;
+}
+.price{
+    display: flex;
+ 
+}
+hr{
+    width: 30%;
+    margin-left: 0;
+}
+.total{
+    padding-right: 17%;
+  
+}
