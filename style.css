@@ -15,9 +15,12 @@ body{
     padding-right: 5%;
     margin-top: 50px;
 }
-.price{
+.amount{
     display: flex;
  
+}
+.price{
+    display: flex;
 }
 hr{
     width: 30%;
