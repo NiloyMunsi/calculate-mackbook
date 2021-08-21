@@ -3,6 +3,16 @@ function updatePrice(product, price) {
     productPrice.innerText = price;
 
     calculateTotal();
+
+    document.getElementById('promo-btn').addEventListener('click', function () {
+        const promoCode = document.getElementById('promo-code').value;
+     
+        if (promoCode == 'stevekaku') {
+            const updatePromo = document.getElementById('sub-total').innerText;
+            const promoPrice = parseInt(updatePromo);
+             document.getElementById('total-value').innerText =promoPrice *.80;
+        }
+    })
 }
 
 
@@ -40,6 +50,7 @@ function calculateTotal() {
     const memoryPrice = document.getElementById('memory-price').innerText;
     const ssdPrice = document.getElementById('ssd-price').innerText;
     const deliveryPrice = document.getElementById('delivery-price').innerText;
-    const subtotal =parseInt(bestPrice) + parseInt(memoryPrice) + parseInt(ssdPrice) + parseInt(deliveryPrice);
+    const subtotal = parseInt(bestPrice) + parseInt(memoryPrice) + parseInt(ssdPrice) + parseInt(deliveryPrice);
     document.getElementById('sub-total').innerText = subtotal;
+    document.getElementById('total-value').innerText = subtotal;
 }

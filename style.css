@@ -23,10 +23,13 @@ body{
     display: flex;
 }
 hr{
-    width: 30%;
+    width: 50%;
     margin-left: 0;
 }
 .total{
     padding-right: 17%;
   
+}
+h2{
+    text-align: center;
 }
