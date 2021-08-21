@@ -4,16 +4,19 @@ function updatePrice(product, price) {
 
     calculateTotal();
 
-    document.getElementById('promo-btn').addEventListener('click', function () {
-        const promoCode = document.getElementById('promo-code').value;
-     
-        if (promoCode == 'stevekaku') {
-            const updatePromo = document.getElementById('sub-total').innerText;
-            const promoPrice = parseInt(updatePromo);
-             document.getElementById('total-value').innerText =promoPrice *.80;
-        }
-    })
 }
+document.getElementById('promo-btn').addEventListener('click', function () {
+    const promoCode = document.getElementById('promo-code').value;
+    const promo = 'stevekaku';
+ 
+    if (promoCode == promo) {
+        const updatePromo = document.getElementById('sub-total').innerText;
+        const promoPrice = parseInt(updatePromo);
+        const discountPrice = promoPrice * .80;
+        document.getElementById('total-value').innerText = discountPrice;
+        document.getElementById('promo-code').value = '';
+    }
+})
 
 
 //memory price added
