@@ -5,6 +5,7 @@ function updatePrice(product, price) {
     calculateTotal();
 
 }
+//adding promo-code for user
 document.getElementById('promo-btn').addEventListener('click', function () {
     const promoCode = document.getElementById('promo-code').value;
     const promo = 'stevekaku';
